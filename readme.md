@@ -1,5 +1,5 @@
-#Example of using Zookeeper in Spring Cloud
-##Short Intro
+# Example of using Zookeeper in Spring Cloud
+## Short Intro
 This application demonstrates the usage of [Apache Zookeeper](https://zookeeper.apache.org/) 
 in a [Spring Cloud](https://spring.io/projects/spring-cloud) Environment.
 
@@ -10,7 +10,7 @@ in a [Spring Cloud](https://spring.io/projects/spring-cloud) Environment.
 **Spring Cloud is used for:**
 * Registering services in Zookeeper
 * Getting a load-balanced Http-Client with  [OpenFeign](https://spring.io/projects/spring-cloud-openfeign) and Ribbon
-##Usage
+## Usage
 1. Create the Zookeeper Environment with Docker in folder docker-zookeeper: \
 `docker-compose up -d`
 2. Open your browser to check if Zookeeper is running: http://localhost:8000
