@@ -1,6 +1,7 @@
 package de.szilch.weatherdata;
 
 import de.szilch.weatherdata.client.WeatherDataClient;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -15,6 +16,7 @@ import org.springframework.stereotype.Component;
 @EnableFeignClients
 @EnableScheduling
 @Component
+@Slf4j
 public class WeatherDataClientApplication {
 
     private WeatherDataClient weatherDataClient;
@@ -26,7 +28,7 @@ public class WeatherDataClientApplication {
 
     @Scheduled(fixedRate = 5000)
     public void receiveWeatherData() {
-        System.out.println("WeatherData received: " + weatherDataClient.getData());
+        log.info("WeatherData received: " + weatherDataClient.getData());
     }
 
     public static void main(String[] args) {
