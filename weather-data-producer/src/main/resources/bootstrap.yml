@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: weather-data-provider
+    name: weather-data-producer
 
 app:
   location: Biblis

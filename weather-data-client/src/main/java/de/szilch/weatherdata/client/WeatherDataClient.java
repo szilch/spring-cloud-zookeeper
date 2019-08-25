@@ -10,7 +10,7 @@ import java.time.ZonedDateTime;
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
-@FeignClient("weather-data-provider")
+@FeignClient("weather-data-producer")
 public interface WeatherDataClient extends WeatherDataApi {
 
 }

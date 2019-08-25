@@ -9,7 +9,7 @@ import lombok.*;
 @AllArgsConstructor
 public class WeatherData {
     private String location;
-    private double degree;
-    private double humidity;
-    private double pressure;
+    private Double temperature;
+    private Double humidity;
+    private Double pressure;
 }

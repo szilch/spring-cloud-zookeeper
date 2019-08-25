@@ -3,9 +3,10 @@
 This application demonstrates the usage of [Apache Zookeeper](https://zookeeper.apache.org/) 
 in a [Spring Cloud](https://spring.io/projects/spring-cloud) Environment.
 
-**Apache Zookeeper is used as:**
+**Apache Zookeeper is used for:**
 * Service Registry
-* Distributed Application Configuration (not implemented yet)
+* Distributed Application Configuration
+* Leader Election (not implemented yet)
 
 **Spring Cloud is used for:**
 * Registering services in Zookeeper
