@@ -6,6 +6,8 @@ services:
     ports:
       - "2181:2181"
     restart: always
+    volumes:
+      - ./zookeeper/data:/data
 
   zoonavigatorUi:
     image: elkozmon/zoonavigator-web:0.6.2
