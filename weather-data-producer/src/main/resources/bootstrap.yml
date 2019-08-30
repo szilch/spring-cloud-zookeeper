@@ -7,3 +7,4 @@ spring:
 
 app:
   location: Biblis
+  leadership-group: /leadership/weahter
